@@ -36,28 +36,33 @@ header {
 
 
 .txt-holder{
- position: absolute;
+ /* position: absolute; */
  margin-left: calc(50% - 250px);
  margin-top: calc(50% - 775px);
-  border-radius: 10px;
-  width: 500px;
-  height: 550px;
-  background: rgba(115, 128, 172, 0.65);
-box-shadow: 10px 18px 50px 0 rgba(66, 66, 83, 0.37);
- border: .5px solid rgba( 255, 255, 255, 0.18 );    
-filter:drop-shadow(3px 3px 5px rgb(24, 12, 92)); 
-opacity: 40%;
-filter: blur(2px);
-
+ border-radius: 10px;
+ width: 500px;
+ height: 550px;
+ background: rgba(115, 128, 172, 0.65);
+ box-shadow: 10px 18px 50px 0 rgba(66, 66, 83, 0.37);
+ border: .5px solid rgba( 255, 255, 255, 0.18 );
+ filter:drop-shadow(3px 3px 5px rgb(24, 12, 92));
+ filter: blur(2px);
+ opacity: 40%;
+ 
 }
 
 
 .data {
   position: absolute;
-  top: 50%;
+  top: 52.5%;
+
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform:translate(-50%, -50%);
   text-align: center;
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
 }
 
   h4,h5,h6{
