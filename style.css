@@ -109,20 +109,27 @@ img{
 
   .txt-holder{
     margin-left: calc(50% - 250px);
-    margin-top: calc(50% - 770px);
+    margin-top: calc(50% - 640px);
     border-radius: 10px;
     width: 500px;
-    height: 500px;
+    height: 550px;
+    
+    
+  }
+
+  .data {
+    margin-top: calc(50% - 50%);
     
   }
 
   h4,h5,h6,p{
-     margin: 25px;
+     padding: 10px;
+     
   }
 
   h4 {
     font-size: 1.8rem;
-    /* margin-top: -15px; */
+    margin: 0; 
       
   }
   
