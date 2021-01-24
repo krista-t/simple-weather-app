@@ -39,7 +39,11 @@ function displayResults(data){
   document.querySelector("img").src = iconUrl;
 
   //Feels like
-  document.querySelector(".feel").innerHTML = "Feels Like: <br>" + Math.round(data.main.feels_like) + "&deg;C";
+  document.querySelector(".feel").innerHTML = "Feels Like: " +  Math.round(data.main.feels_like) + "&deg;C";
+
+  //Wind
+  document.querySelector(".wind").innerHTML = "Wind: " +Math.round(data.wind.speed) + "m/s"
+
 
 
   
