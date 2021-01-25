@@ -20,14 +20,17 @@ header {
 
 .search-bar {
   width: 250px;
-  padding: 15px;
+  padding: 20px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border: none;
   text-align: left;
   filter: drop-shadow(3px 3px 5px rgb(24, 12, 92));
-  font-size: .6rem;
+  
+  
 }
+
+
 .close{
   position: absolute;
   margin-left: -25px;
