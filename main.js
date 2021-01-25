@@ -24,7 +24,7 @@ function displayResults(data){
   console.log(data)
   // City and country
   document.querySelector("h4").innerHTML= `${data.name}, ${data.sys.country}`;
- 
+
   // Temperature
   let temperature =document.querySelector("h5")
   temperature.innerHTML= Math.round(data.main.temp).toString() + "&deg;C";
@@ -43,10 +43,17 @@ function displayResults(data){
 
   //Wind
   document.querySelector(".wind").innerHTML = "Wind: " +Math.round(data.wind.speed) + "m/s"
-
-
-
-  
-  
+ 
   
 }
+
+//Day & Date
+const date = new Date();
+const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+let dayNumber = date.getDay();
+let dayName = day[dayNumber];
+
+
+let today = `${date.getDate().toString()} - ${(date.getMonth()+1).toString()} - ${date.getFullYear().toString()} `
+document.querySelector(".date").innerHTML = dayName + ", " + today;
