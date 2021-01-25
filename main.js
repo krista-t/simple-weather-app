@@ -49,7 +49,6 @@ function displayResults(data) {
     if (e.target) {
       search.value = document.querySelector(".search-bar placeholdr");
       search.innerHTML = "  &#128269; enter city"
-      console.log(search.value)
       document.querySelector("h4").innerHTML = " "
       temperature.innerHTML = " "
       document.querySelector("h6").innerHTML = " "

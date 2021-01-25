@@ -34,7 +34,7 @@ header {
 .close{
   position: absolute;
   margin-left: -25px;
-  top: 60px;
+  top: 65px;
 }
 
 .close:hover {
