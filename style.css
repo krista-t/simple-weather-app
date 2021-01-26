@@ -20,21 +20,19 @@ header {
 
 .search-bar {
   width: 250px;
-  padding: 20px;
+  padding: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border: none;
   text-align: left;
-  filter: drop-shadow(3px 3px 5px rgb(24, 12, 92));
-  
-  
+  filter: drop-shadow(3px 3px 5px rgb(24, 12, 92));   
 }
-
 
 .close{
   position: absolute;
   margin-left: -25px;
-  top: 65px;
+  top: 60px;
+
 }
 
 .close:hover {
@@ -46,6 +44,7 @@ header {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  border: none;
 }
 
 h4,
@@ -76,6 +75,10 @@ p {
 img {
   max-width: 100%;
   margin: o auto;
+}
+
+.hide {
+  display: none;
 }
 
 @media (min-width: 1281px) {

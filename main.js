@@ -1,6 +1,11 @@
 const apikey = "3fd396f291239318cc87dde08c90882e";
 const search = document.querySelector(".search-bar");
+const clear = document.querySelector(".close");
+window.addEventListener("load", ()=>{clear.classList.add("hide")});
+search.addEventListener("keypress", ()=>{clear.classList.remove("hide")})
 search.addEventListener("keypress", setQuery);
+
+
 
 function setQuery(e) {
   if (e.keyCode == 13) {
@@ -39,26 +44,23 @@ function displayResults(data) {
   //Wind
   document.querySelector(".wind").innerHTML = "Wind: " + Math.round(data.wind.speed) + "m/s"
 
+}
 
-  //Clear search
-  const clear = document.querySelector(".close");
-  clear.addEventListener("click", clearSearch);
+//Clear search
+clear.addEventListener("click", clearSearch);
+function clearSearch(e) {
+  if (e.target) {
+    
+    search.value = document.querySelector(".search-bar placeholder");
+    document.querySelector("h4").innerHTML = " "
+    document.querySelector("h5").innerHTML = " "
+    document.querySelector("h6").innerHTML = " "
+    document.querySelector("img").src = " "
+    document.querySelector(".feel").innerHTML = " "
+    document.querySelector(".wind").innerHTML = " "
+    clear.classList.add("hide");
 
-  function clearSearch(e) {
-    console.log(e.target)
-    if (e.target) {
-      search.value = document.querySelector(".search-bar placeholdr");
-      search.innerHTML = "  &#128269; enter city"
-      document.querySelector("h4").innerHTML = " "
-      temperature.innerHTML = " "
-      document.querySelector("h6").innerHTML = " "
-      document.querySelector("img").src = " "
-      document.querySelector(".feel").innerHTML = " "
-      document.querySelector(".wind").innerHTML = " "
-
-    }
   }
-
 }
 
 //Day & Date
